@@ -1,7 +1,7 @@
 import Head from 'next/head'
 
 function HomePage() {
-  return <div>Welcome to Next.js!</div>
+  return <div>Welcome to the dev branch!</div>
 }
 
 export default HomePage;
