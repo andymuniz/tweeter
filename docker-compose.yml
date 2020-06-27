@@ -24,3 +24,12 @@ services:
     #   ME_CONFIG_MONGODB_ADMINPASSWORD: example
     ports:
       - 8081:8081
+
+  tweeter-frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    restart: always
+    env_file: ./.env.development.local
+    ports: 
+      - 3000:3000
