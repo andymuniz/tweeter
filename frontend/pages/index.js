@@ -1,7 +1,7 @@
 import Head from 'next/head'
 
 function HomePage() {
-  return <div>Welcome to the dev branch!</div>
+  return <div>Welcome to the dev branch again!</div>
 }
 
 export default HomePage;
