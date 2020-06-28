@@ -1,4 +1,3 @@
-# Use root/example as user/password credentials
 version: '3.8'
 
 services:
@@ -9,9 +8,6 @@ services:
     env_file: ./.env.development.local
     ports:
       - 27017:27017
-      # environment:
-      #   MONGO_INITDB_ROOT_USERNAME: root
-      #   MONGO_INITDB_ROOT_PASSWORD: example
     volumes:
       - ~/mongodb_docker/data:/data/db
 
@@ -19,9 +15,6 @@ services:
     image: mongo-express
     restart: always
     env_file: ./.env.development.local
-    # environment:
-    #   ME_CONFIG_MONGODB_ADMINUSERNAME: root
-    #   ME_CONFIG_MONGODB_ADMINPASSWORD: example
     ports:
       - 8081:8081
 
